@@ -1,0 +1,1 @@
+$(".product-lider input[action=buy_lider]").click(function(e){$(this).parents('form').find('input[name=action]').val('buy');$(this).parents('form').submit()})
