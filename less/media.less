@@ -24,8 +24,9 @@
   }
   .product-list__item {
     width: 20% !important;
-    
-    &:nth-child(6) {
+  }
+  .category-block__body {
+    .product-list__item:nth-child(6) {
       display: none;
     }
   }
@@ -125,8 +126,9 @@
   }
   .product-list__item {
     width: 25% !important;
-    
-    &:nth-child(5) {
+  }
+  .category-block__body {
+    .product-list__item:nth-child(5) {
       display: none;
     }
   }
@@ -411,6 +413,14 @@
 @media (max-width: 480px) {
   .product-list__item {
     width: 50% !important;
+  }
+  .category-block__body {
+    .product-list__item {
+      &:nth-child(5),
+      &:nth-child(6) {
+        display: inline-block;
+      }
+    }
   }
   .brand-slidere-item {
     max-width: 47%;
