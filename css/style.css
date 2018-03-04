@@ -4951,7 +4951,7 @@ section.tabs {
   .product-list__item {
     width: 20% !important;
   }
-  .product-list__item:nth-child(6) {
+  .category-block__body .product-list__item:nth-child(6) {
     display: none;
   }
   .index-news-item {
@@ -5053,7 +5053,7 @@ section.tabs {
   .product-list__item {
     width: 25% !important;
   }
-  .product-list__item:nth-child(5) {
+  .category-block__body .product-list__item:nth-child(5) {
     display: none;
   }
   .seo-block {
@@ -5351,6 +5351,10 @@ section.tabs {
 @media (max-width: 480px) {
   .product-list__item {
     width: 50% !important;
+  }
+  .category-block__body .product-list__item:nth-child(5),
+  .category-block__body .product-list__item:nth-child(6) {
+    display: inline-block;
   }
   .brand-slidere-item {
     max-width: 47%;
