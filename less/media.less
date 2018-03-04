@@ -98,6 +98,19 @@
     margin-left: 0;
     margin-right: 0;
   }
+  .basket-block {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .basket-block__body {
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    .cart_img {
+      max-width: 280px;
+      padding-left: 0;
+    }
+  }
 }
 
 //---------------------------
@@ -292,6 +305,10 @@
   .tabs__label {
     margin-right: 30px;
   }
+  .basket-block__table td {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 
 //---------------------
@@ -434,6 +451,54 @@
   .product-params_price__type {
     padding-left: 5px;
     padding-right: 5px;
+  }
+  .basket-block__title {
+    font-size: 24px;
+  }
+  .basket-block__table,
+  .basket-block__table td,
+  .basket-block__table tbody {
+    display: block;
+  }
+  .basket-block__table tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .basket-block__body .cart_img {
+    max-width: none;
+    width: 100%;
+  }
+  .basket-block__table td {
+    min-height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .basket-block__table__devider {
+    margin: 0 5px;
+  }
+  .basket-block__table .count-block__input .form-control {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .basket-block__table .count-block {
+    width: 40px;
+  }
+  .basket-block__footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .basket-block__footer .btn {
+    margin: 0;
+    margin-top: 20px;
+  }
+  .basket-block__body .cart_img {
+    justify-content: flex-start;
+    border-bottom: none;
   }
 }
 //-------------------------
