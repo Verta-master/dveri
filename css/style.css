@@ -4895,6 +4895,9 @@ section.tabs {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+.popup_one_click {
+  margin-left: 0;
+}
 @media (max-width: 700px) {
   .footer {
     height: auto;
@@ -4948,11 +4951,14 @@ section.tabs {
   .menu__item_pic_index {
     width: 32.5%;
   }
-  .product-list__item {
+  .page-block .product-list__item {
     width: 20% !important;
   }
   .category-block__body .product-list__item:nth-child(6) {
     display: none;
+  }
+  .category-block__body .product-list__item {
+    width: 20% !important;
   }
   .index-news-item {
     margin-left: 20px;
@@ -5037,6 +5043,10 @@ section.tabs {
     max-width: 280px;
     padding-left: 0;
   }
+  .product-block {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 @media (max-width: 1022px) {
   .top-menu-btn {
@@ -5075,11 +5085,14 @@ section.tabs {
   .menu__item_pic_index_name {
     font-size: 20px;
   }
-  .product-list__item {
+  .page-block .product-list__item {
     width: 25% !important;
   }
   .category-block__body .product-list__item:nth-child(5) {
     display: none;
+  }
+  .category-block__body .product-list__item {
+    width: 25% !important;
   }
   .seo-block {
     margin-bottom: 0;
@@ -5221,8 +5234,15 @@ section.tabs {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .tabs__header {
+    padding-left: 20px;
+    padding-right: 15px;
+  }
   .tabs__label {
     margin-right: 30px;
+  }
+  .tabs__info img {
+    height: auto;
   }
   .basket-block__table td {
     padding-left: 5px;
@@ -5468,12 +5488,15 @@ section.tabs {
   }
 }
 @media (max-width: 480px) {
-  .product-list__item {
+  .page-block .product-list__item {
     width: 50% !important;
   }
   .category-block__body .product-list__item:nth-child(5),
   .category-block__body .product-list__item:nth-child(6) {
     display: inline-block;
+  }
+  .category-block__body .product-list__item {
+    width: 50% !important;
   }
   .brand-slidere-item {
     max-width: 47%;
@@ -5594,9 +5617,6 @@ section.tabs {
     font-size: 20px;
   }
   .product-list__basket {
-    font-size: 10px;
-  }
-  .link-dot.link-icon .link {
     font-size: 10px;
   }
 }
