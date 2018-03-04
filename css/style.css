@@ -4891,6 +4891,10 @@ section.tabs {
 .brand-slidere-item {
   max-width: 14%;
 }
+.popup_call {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
 @media (max-width: 700px) {
   .footer {
     height: auto;
@@ -5103,8 +5107,33 @@ section.tabs {
   .nav__subitem__body .col-xs-5 {
     width: 100%;
   }
+  .popup_preview {
+    width: 80%;
+  }
+  .product-preview__info {
+    margin-right: 25px;
+  }
+  .product-params {
+    width: 100%;
+  }
+  .product-preview .product-params {
+    margin-top: 20px;
+  }
+  .product-params__item {
+    margin-bottom: 10px;
+  }
+  .product-preview .product-block__footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .product-preview__image {
+    height: auto;
+  }
 }
 @media (max-width: 766px) {
+  .promo-block {
+    display: none;
+  }
   .header {
     padding-top: 20px;
     padding-bottom: 0;
@@ -5237,6 +5266,31 @@ section.tabs {
   .footer__center .row::after {
     display: none;
   }
+  .product-preview__image {
+    width: 40%;
+    margin-left: 20px;
+  }
+  .product-preview__info {
+    margin-left: 200px;
+    margin-right: 20px;
+  }
+  .product-info .pull-right {
+    max-width: none;
+  }
+  .product-params__name {
+    float: none;
+  }
+  .product-params__value {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .product-params_price__price {
+    font-size: 20px;
+  }
+  .product-params_price__type {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }
 @media (max-width: 480px) {
   .product-list__item {
@@ -5245,16 +5299,40 @@ section.tabs {
   .brand-slidere-item {
     max-width: 47%;
   }
-  .promo-block__slides__image {
-    height: 100px;
+  .popup_one_click,
+  .popup_preview,
+  .popup_basket,
+  .popup,
+  .popup_one_click,
+  .popup_call,
+  .popup_login {
+    width: 280px;
   }
-  .promo-block__slides__image img {
-    height: 100%;
-    width: auto;
-    max-width: none;
-    margin-left: -340px;
+  .popup_one_click {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-left: 0;
   }
-  .promo-block {
-    height: auto;
+  .popup__header h3 {
+    font-size: 18px;
+  }
+  .popup__footer .link__close {
+    display: block;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .login-block__tabs {
+    font-size: 16px;
+  }
+  .login-block__tabs__item {
+    padding: 0 10px;
+  }
+  .product-preview__image {
+    float: none;
+    width: 85%;
+  }
+  .product-preview__info {
+    margin-left: 20px;
   }
 }
