@@ -14,7 +14,7 @@
 .popup_call {
   margin-left: 0;
 }
-
+//----------------------------------
 @media (max-width: 1220px) {
   .search-block {
     float: left !important;
@@ -429,6 +429,10 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+  .cabinet .link-exit {
+    float: none !important;
+    margin-left: 20px;
+  }
 }
 
 //---------------------
@@ -699,6 +703,26 @@
     margin-top: 0;
     line-height: 38px;
   }
+  .cabinet {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .cabinet__orders__table {
+    display: block;
+    
+    tbody {
+      display: flex; 
+    }
+    tr {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+    }
+    th,
+    td {
+      height: 55px;
+    }
+  }
 }
 //-------------------------
 @media (max-width: 480px) {
@@ -862,5 +886,12 @@
   }
   .leaflet-popup-content-wrapper {
     max-width: 100% !important;
+  }
+  .cabinet__orders__table {
+    th,
+    td {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 }
